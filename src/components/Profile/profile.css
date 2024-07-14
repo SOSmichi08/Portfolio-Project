@@ -1,0 +1,54 @@
+/* Apply the global color variables */
+:root {
+    --color-text: #ffffff;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+  }
+  
+  /* Profile Page */
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-roboto), sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: var(--color-primary);
+  }
+  
+  p {
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  
+  /* Document Links */
+  .document-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .document-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  .button {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: var(--color-secondary);
+  }
+  

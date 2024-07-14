@@ -15,7 +15,6 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
-  padding-bottom: 20px;
 }
 
 
@@ -31,7 +30,6 @@
   display: flex;
   gap: 47px;
   list-style: none;
-  padding-bottom: 20px;
 }
 
 .menuItems a {
