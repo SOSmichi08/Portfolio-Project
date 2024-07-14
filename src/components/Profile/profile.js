@@ -7,12 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
       loggedInAs.textContent = `Logged in as: Employer`;
       // Load documents for Employer
       loadDocumentsForEmployer();
-      // Hide add and remove document buttons for Employer
+      // Hide add, remove document and edit credentials  buttons for Employer
       const addDocumentBtn = document.getElementById('addDocumentBtn');
       addDocumentBtn.style.display = 'none';
   
       const removeDocumentBtn = document.getElementById('removeDocumentBtn');
       removeDocumentBtn.style.display = 'none';
+
     } else if (loggedInUser === 'Admin') {
       loggedInAs.textContent = `Logged in as: Admin`;
       // Load documents for Admin
@@ -121,12 +122,5 @@ document.addEventListener('DOMContentLoaded', function() {
         documentsList.appendChild(document.createElement('br'));
       });
     }
-  
-    // Logout functionality
-    const logoutBtn = document.getElementById('logoutBtn');
-    logoutBtn.addEventListener('click', function() {
-      localStorage.removeItem('loggedInUser');
-      window.location.href = 'index.html';
-    });
   });
   

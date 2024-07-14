@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from './NotFound.module.css';
 
-function NotFound() {
+const NotFound = () => {
   return (
-    <div>
-      <h1>404 - Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
+    <div className={styles.container}>
+      <h1 className={styles.title}>404 - Not Found</h1>
+      <p className={styles.message}>The page you are looking for does not exist.</p>
     </div>
   );
-}
+};
 
 export default NotFound;
