@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="impressum.css">
+</head>
+<body class="classic">
+    <div class="impressum-container">
+        <h1>Impressum</h1>
+        <p>Responsible for content:</p>
+        <p>Karl Zenker</p>
+        <p>Ilgenstrasse 1</p>
+        <p>Lachen SZ, Switzerland</p>
+        <p>Email: karl.e.zenker@gmail.com</p>
+        <p>Phone: +41762330640</p>
+
+        <div class="theme-buttons">
+            <h2>Change Theme</h2>
+            <button onclick="changeTheme('classic')">Classic</button>
+            <button onclick="changeTheme('highContrast')">High Contrast</button>
+            <button onclick="changeTheme('soft')">Soft</button>
+            <button onclick="changeTheme('cool')">Cool</button>
+            <button onclick="changeTheme('dark')">Dark</button>
+        </div>
+    </div>
+
+    <script>
+        function changeTheme(theme) {
+            document.body.className = theme;
+        }
+    </script>
+</body>
+</html>
